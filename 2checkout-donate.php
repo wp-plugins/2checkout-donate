@@ -139,7 +139,9 @@ function twoco_donate_button( $atts, $content = 'Donate' ) {
 		'type' => 'button',
 		'sid' => get_option('twoco_sid'),
 		'amount' => get_option('twoco_amount'),
+		'noval' => 0,
 	), $atts ) );
+	if ($noval==1) { $content .= ' $'.number_format($amount, 2, '.', ','); }
 	if ($type=='button') {
 		$html='<form action="https://www.2checkout.com/checkout/purchase" method="post">
 			<p>
@@ -148,7 +150,7 @@ function twoco_donate_button( $atts, $content = 'Donate' ) {
 				<input type="hidden" name="total" value="'.number_format($amount, 2, '.', ',').'"/>
 				<input type="hidden" name="id_type" value="1"/>
 				<input type="hidden" name="lang" value="en"/>
-				<input type="submit" value="'.$content.' $'.number_format($amount, 2, '.', ',').'"/>
+				<input type="submit" value="'.$content.'"/>
 			</p>
 		</form>';
 	} else {
@@ -156,7 +158,7 @@ function twoco_donate_button( $atts, $content = 'Donate' ) {
 		sid='.$sid.'&amp;
 		cart_order_id=12345&amp;
 		total='.number_format($amount, 2, '.', ',').'&amp;
-		id_type=1">'.$content.' $'.number_format($amount, 2, '.', ',').'</a>';
+		id_type=1">'.$content.'</a>';
 	}
 	return $html;
 }

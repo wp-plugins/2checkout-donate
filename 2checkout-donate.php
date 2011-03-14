@@ -126,9 +126,11 @@ function twoco_deactivation() {
 
 function twoco_settings_link($links) {
 	$settings_link = '<a href="options-general.php?page=2checkout-donate/2checkout-donate.php">Settings</a>';
-	array_unshift($links, $settings_link); return $links;
-}
-$plugin = plugin_basename(__FILE__);
+	array_unshift($links, $settings_link);
+	$support_link = '<a href="https://patrickgarman.zendesk.com/forums/374736-2checkout-donate" target="_blank">Plugin Support</a>';
+	array_unshift($links, $support_link);
+	return $links;
+} $plugin = plugin_basename(__FILE__);
 add_filter("plugin_action_links_$plugin", 'twoco_settings_link' );
 
 // [2checkout]

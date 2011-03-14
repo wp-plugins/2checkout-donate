@@ -1,10 +1,10 @@
-=== 2Checkout Donate ===
+﻿=== 2Checkout Donate ===
 Contributors: patrickgarman
 Donate link: http://www.patrickgarman.com/donate/
 Tags: 2checkout, 2co, donate
 Requires at least: 3.0.0
 Tested up to: 3.1
-Stable tag: 1.0.1
+Stable tag: 1.0.3
 
 This plugin allows site owners to have a donate buttons for visitors to donate via 2Checkout in either set or custom amounts.
 

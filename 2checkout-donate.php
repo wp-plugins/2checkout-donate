@@ -5,7 +5,7 @@
 Plugin Name: 2Checkout Donate
 Plugin URI: http://www.patrickgarman.com/tag/2checkout-donate
 Description: This plugin allows site owners to have a donate buttons for visitors to donate via 2Checkout in either set or custom amounts.
-Version: 1.0.1
+Version: 1.0.3
 Author: Patrick Garman
 Author URI: http://www.patrickgarman.com/
 License: GPLv2

@@ -1,10 +1,9 @@
 ﻿=== 2Checkout Donate ===
-Contributors: patrickgarman
-Donate link: http://www.patrickgarman.com/donate/
-Tags: 2checkout, 2co, donate
+Contributors: patrickgarman 
+Tags: 2co, 2checkout, donate, donation, button, payment,
 Requires at least: 3.0.0
 Tested up to: 3.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 
 This plugin allows site owners to have a donate buttons for visitors to donate via 2Checkout in either set or custom amounts.
 
@@ -12,27 +11,53 @@ This plugin allows site owners to have a donate buttons for visitors to donate v
 
 This plugin allows site owners to have a donate buttons for visitors to donate via 2Checkout in either set or custom amounts.
 
-To use, simply add the shortcode "2checkout" to your posts or pages. The parameters and some examples are below.
+To use, simply add the shortcode \"2checkout\" to your posts or pages. The parameters and some examples are below.
 
-content: Value used for submit button or text used in link.
+ 
 
-sid: If you want to enter a custom seller ID...
+type: button|link|manual -- type of element shortcode outputs
 
-amount: Custom donation amount.
+sid: custom 2checkout ID -- if you want to enter a custom seller ID...
 
-type: Specify submit button or text link.
+amount: custom donation amount -- format of 5.00
 
-noval: Set to 1 if you dont want the value added to the content.
+noval: 0|1 -- set to 1 if you want to add the fixed amount to your text
 
-To have a form submit button that says Donate using the default donation amount:
+demo: Y -- if you set demo to Y, transactions will not be processed
 
-[2checkout]Donate[/2checkout]
+target: \_self|\_target -- HTML target for your element (new window vs same window)
 
-To have a link that says Purchase using a custom donation amount without:
+lang: 2checkout language parameter
 
-[2checkout type=link amount=10.00 noval=1]Purchase[/2checkout]
+currency: 2checkout currency parameter
+
+skip_landing: 0|1 -- set to 1 if you want to skip the default landing page during checkout
+
+ 
+
+**Usage**
+
+Use all defaults:
+
+[2checkout]
+
+ 
+
+Button that says \"Purchase\", price $5, in a new window:
+
+[2checkout type=\"button\" amount=\"5.00\" target=\"_blank\"]Purchase[/2checkout]
 
 == Installation ==
 
-1.  Download the latest version of <a href="http://wordpress.org/extend/plugins/2checkout-donate/" target="_blank">2Checkout Donate</a> from the Wordpress Plugin Directory.
-2.  Upload the contents of the ZIP file to your /wp-content/plugins directory of your website and activate the plugin.
+Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
+
+== Changelog ==
+1.0.4: Minor Bug Fixes, Added Parameters, Updated Options Page
+
+1.0.3: Minor Bug Fixes
+
+1.0.2: Added Link Type, Added \"amount\" Parameter
+
+1.0.1: Minor Bug Fixes
+
+1.0.0: Initial Release

@@ -11,7 +11,7 @@ This plugin allows site owners to have a donate buttons for visitors to donate v
 
 This plugin allows site owners to have a donate buttons for visitors to donate via 2Checkout in either set or custom amounts.
 
-To use, simply add the shortcode \"2checkout\" to your posts or pages. The parameters and some examples are below.
+To use, simply add the shortcode "2checkout" to your posts or pages. The parameters and some examples are below.
 
  
 
@@ -25,7 +25,7 @@ noval: 0|1 -- set to 1 if you want to add the fixed amount to your text
 
 demo: Y -- if you set demo to Y, transactions will not be processed
 
-target: \_self|\_target -- HTML target for your element (new window vs same window)
+target: _self|_target -- HTML target for your element (new window vs same window)
 
 lang: 2checkout language parameter
 
@@ -41,11 +41,11 @@ Use all defaults:
 
 [2checkout]
 
- 
 
-Button that says \"Purchase\", price $5, in a new window:
 
-[2checkout type=\"button\" amount=\"5.00\" target=\"_blank\"]Purchase[/2checkout]
+Button that says "Purchase", price $5, in a new window:
+
+[2checkout type="button" amount="5.00" target="_blank"]Purchase[/2checkout]
 
 == Installation ==
 
@@ -56,7 +56,7 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 1.0.3: Minor Bug Fixes
 
-1.0.2: Added Link Type, Added \"amount\" Parameter
+1.0.2: Added Link Type, Added "amount" Parameter
 
 1.0.1: Minor Bug Fixes
 
